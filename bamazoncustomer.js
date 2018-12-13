@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "insecure",
+  password: "bullelkcd19",
   database: "bamazon"
 });
 
@@ -53,11 +53,11 @@ var buyItem = function() {
   inquirer.prompt([
     {
       type: "input",
-      message: "enter the item id of the product you would like to buy",
+      message: "Enter the item_id of the product to Purchase",
       name: "item"
     }, {
       type: "number",
-      message: "how many do you want to buy?",
+      message: "How many do you want to Purchase?",
       name: "quantity"
     }
   ]).then(function(argument) {
@@ -74,7 +74,7 @@ var buyItem = function() {
       connection.query("UPDATE products SET quantity = ? WHERE item_id = ?", [newQuantity, argument.item]);
       console.log("Your order for " + numSold + " units of " + res[0].product_name + " has been placed.");
       console.log("You spent $" + totalCost + " on your purchase.");
-      console.log("Thank you for shopping with Bamazon. Logging you out now. Please come again.");
+      console.log("Thank you for shopping with Bamazon. Logging out, Please shop again.");
       connection.end();
     });
   });

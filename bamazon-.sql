@@ -17,6 +17,6 @@ VALUES ("Fedora", "Clothing", 80.00, 20),
 		("Toe Shoes", "Clothing", 120.00, 7),
 		("Standing Desk", "Home Decor", 90.00, 12),
 		("Gaming Chair", "Furniture", 2500.00, 3),
-		("Chromebook", "Electronics", 500.00, 6),
+		("Chromebook", "Electronics", 700.00, 6),
 		("Laptop Bag", "Luggage", 200.00, 11),
-		("Dell Laptop", "Electronics", 700.00, 2);
+		("Dell Laptop", "Electronics", 100.00, 2);
